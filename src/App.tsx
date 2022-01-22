@@ -1,22 +1,21 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
+  Routes,
   Route,
-  Redirect,
-  Switch,
+  Navigate,
 } from 'react-router-dom';
 import './App.scss';
 
 const routes = (
-  <Switch>
-    <Route path="/" exact>
-      Index Page
-    </Route>
-    <Route path="/page1">
-      Page 1
-    </Route>
-    <Redirect to="/" />
-  </Switch>
+  <Routes>
+    <Route path="/" element={<div>Index Page</div>} />
+    <Route path="/page1" element={<div>Page 1</div>} />
+    <Route
+      path="*"
+      element={<Navigate to="/" />}
+    />
+  </Routes>
 );
 
 const App = () => (

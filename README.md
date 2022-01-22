@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Have to run install-peerdeps --dev eslint-config-airbnb for airbnb
+
 In the project directory, you can run:
 
 ### `npm start`
